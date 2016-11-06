@@ -1,4 +1,5 @@
 excluded:
+  - Pods
   - Carthage
 line_length:
   - 192 # warning
