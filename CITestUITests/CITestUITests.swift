@@ -21,6 +21,6 @@ class CITestUITests: XCTestCase {
         let app = XCUIApplication()
 
         app.buttons["Switch"].tap()
-    }
+    } 
 
 }
