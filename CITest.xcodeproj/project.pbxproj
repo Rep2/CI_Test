@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1C1C77731DCCC21000ADFA6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1C77721DCCC21000ADFA6C /* AppDelegate.swift */; };
-		1C1C77751DCCC21000ADFA6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1C77741DCCC21000ADFA6C /* ViewController.swift */; };
+		1C1C77751DCCC21000ADFA6C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1C77741DCCC21000ADFA6C /* FirstViewController.swift */; };
 		1C1C77781DCCC21000ADFA6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C1C77761DCCC21000ADFA6C /* Main.storyboard */; };
 		1C1C777A1DCCC21000ADFA6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C1C77791DCCC21000ADFA6C /* Assets.xcassets */; };
 		1C1C777D1DCCC21000ADFA6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C1C777B1DCCC21000ADFA6C /* LaunchScreen.storyboard */; };
-		1C1C77881DCCC21000ADFA6C /* CITestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1C77871DCCC21000ADFA6C /* CITestTests.swift */; };
+		1C1C77951DCCD76B00ADFA6C /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1C77931DCCD76B00ADFA6C /* Reusable.swift */; };
+		1C1C77961DCCD76B00ADFA6C /* ReusableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1C77941DCCD76B00ADFA6C /* ReusableViewController.swift */; };
+		1C1C77981DCCD85000ADFA6C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1C77971DCCD85000ADFA6C /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +30,16 @@
 /* Begin PBXFileReference section */
 		1C1C776F1DCCC21000ADFA6C /* CITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C1C77721DCCC21000ADFA6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1C1C77741DCCC21000ADFA6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1C1C77741DCCC21000ADFA6C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		1C1C77771DCCC21000ADFA6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C1C77791DCCC21000ADFA6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C1C777C1DCCC21000ADFA6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C1C777E1DCCC21000ADFA6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C1C77831DCCC21000ADFA6C /* CITestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CITestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C1C77871DCCC21000ADFA6C /* CITestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CITestTests.swift; sourceTree = "<group>"; };
 		1C1C77891DCCC21000ADFA6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C1C77931DCCD76B00ADFA6C /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		1C1C77941DCCD76B00ADFA6C /* ReusableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableViewController.swift; sourceTree = "<group>"; };
+		1C1C77971DCCD85000ADFA6C /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +81,14 @@
 		1C1C77711DCCC21000ADFA6C /* CITest */ = {
 			isa = PBXGroup;
 			children = (
+				1C1C77921DCCD76B00ADFA6C /* Reusable */,
 				1C1C77721DCCC21000ADFA6C /* AppDelegate.swift */,
-				1C1C77741DCCC21000ADFA6C /* ViewController.swift */,
+				1C1C77741DCCC21000ADFA6C /* FirstViewController.swift */,
 				1C1C77761DCCC21000ADFA6C /* Main.storyboard */,
 				1C1C77791DCCC21000ADFA6C /* Assets.xcassets */,
 				1C1C777B1DCCC21000ADFA6C /* LaunchScreen.storyboard */,
 				1C1C777E1DCCC21000ADFA6C /* Info.plist */,
+				1C1C77971DCCD85000ADFA6C /* SecondViewController.swift */,
 			);
 			path = CITest;
 			sourceTree = "<group>";
@@ -90,10 +96,18 @@
 		1C1C77861DCCC21000ADFA6C /* CITestTests */ = {
 			isa = PBXGroup;
 			children = (
-				1C1C77871DCCC21000ADFA6C /* CITestTests.swift */,
 				1C1C77891DCCC21000ADFA6C /* Info.plist */,
 			);
 			path = CITestTests;
+			sourceTree = "<group>";
+		};
+		1C1C77921DCCD76B00ADFA6C /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				1C1C77931DCCD76B00ADFA6C /* Reusable.swift */,
+				1C1C77941DCCD76B00ADFA6C /* ReusableViewController.swift */,
+			);
+			path = Reusable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,6 +120,8 @@
 				1C1C776B1DCCC21000ADFA6C /* Sources */,
 				1C1C776C1DCCC21000ADFA6C /* Frameworks */,
 				1C1C776D1DCCC21000ADFA6C /* Resources */,
+				1C1C779A1DCCD9B200ADFA6C /* ShellScript */,
+				1C1C77991DCCD9A500ADFA6C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -196,12 +212,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C1C77991DCCD9A500ADFA6C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		1C1C779A1DCCD9B200ADFA6C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/TweetFeedModels.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Unbox.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1C1C776B1DCCC21000ADFA6C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C1C77751DCCC21000ADFA6C /* ViewController.swift in Sources */,
+				1C1C77951DCCD76B00ADFA6C /* Reusable.swift in Sources */,
+				1C1C77961DCCD76B00ADFA6C /* ReusableViewController.swift in Sources */,
+				1C1C77751DCCC21000ADFA6C /* FirstViewController.swift in Sources */,
+				1C1C77981DCCD85000ADFA6C /* SecondViewController.swift in Sources */,
 				1C1C77731DCCC21000ADFA6C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,7 +260,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C1C77881DCCC21000ADFA6C /* CITestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,7 +390,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TEU2W33Z6N;
 				INFOPLIST_FILE = CITest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(PROJECT_DIR)/Carthage/Build/iOS @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = undabot.CITest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -354,7 +403,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TEU2W33Z6N;
 				INFOPLIST_FILE = CITest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(PROJECT_DIR)/Carthage/Build/iOS @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = undabot.CITest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -410,6 +459,7 @@
 				1C1C778E1DCCC21000ADFA6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1C1C778F1DCCC21000ADFA6C /* Build configuration list for PBXNativeTarget "CITestTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +468,7 @@
 				1C1C77911DCCC21000ADFA6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
