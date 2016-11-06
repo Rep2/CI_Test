@@ -18,6 +18,7 @@
 		1C5687941DCF6AE90068398A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5687931DCF6AE90068398A /* Model.swift */; };
 		1C5687961DCF6F1C0068398A /* Boxable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5687951DCF6F1C0068398A /* Boxable.swift */; };
 		1C56879E1DCF7E350068398A /* CITestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C56879D1DCF7E350068398A /* CITestUITests.swift */; };
+		1C5687A61DCF974D0068398A /* CITestUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5687A51DCF974D0068398A /* CITestUnitTest.swift */; };
 		4F474169EC03408B580DE466 /* Pods_CITest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9748E8BF4CF05DC9C686E54 /* Pods_CITest.framework */; };
 		F1D4C983A0796AA4E580E6C6 /* Pods_CITestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB4A911D7C32BF9DBECF13CB /* Pods_CITestTests.framework */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,7 @@
 		1C56879B1DCF7E350068398A /* CITestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CITestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C56879D1DCF7E350068398A /* CITestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CITestUITests.swift; sourceTree = "<group>"; };
 		1C56879F1DCF7E350068398A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C5687A51DCF974D0068398A /* CITestUnitTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CITestUnitTest.swift; sourceTree = "<group>"; };
 		95674DFC8BCD306AEBC75CD5 /* Pods-CITestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CITestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CITestTests/Pods-CITestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A6AA5D2BF46F4473EE8AD9AF /* Pods-CITest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CITest.release.xcconfig"; path = "Pods/Target Support Files/Pods-CITest/Pods-CITest.release.xcconfig"; sourceTree = "<group>"; };
 		AB4A911D7C32BF9DBECF13CB /* Pods_CITestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CITestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				1C1C77891DCCC21000ADFA6C /* Info.plist */,
+				1C5687A51DCF974D0068398A /* CITestUnitTest.swift */,
 			);
 			path = CITestTests;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 					1C1C77821DCCC21000ADFA6C = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = TEU2W33Z6N;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 1C1C776E1DCCC21000ADFA6C;
 					};
@@ -458,6 +462,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C5687A61DCF974D0068398A /* CITestUnitTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,11 +646,18 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = TEU2W33Z6N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Alamofire\"",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CITestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = undabot.CITestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CITest.app/CITest";
 			};
@@ -657,7 +669,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = TEU2W33Z6N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Alamofire\"",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CITestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = undabot.CITestTests;
