@@ -31,19 +31,4 @@ class CITestUnitTest: XCTestCase {
         }
     }
 
-    func test_failure() {
-        let json: [String : Any] = [
-            "size" : ["width" : 10, "height" : 10] as Any
-        ]
-
-        do {
-            let model: Model = try unbox(data: JSONSerialization.data(withJSONObject: json, options: .prettyPrinted))
-
-            XCTAssert(model.name == "test")
-            XCTAssert(model.size == Size(width: 10, height: 10))
-        } catch {
-            XCTAssertFalse(true)
-        }
-    }
-
 }
