@@ -616,6 +616,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = CITest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(PROJECT_DIR)/Carthage/Build/iOS @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.undabot.CITest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -637,6 +638,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = CITest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(PROJECT_DIR)/Carthage/Build/iOS @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.undabot.CITest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
