@@ -24,5 +24,12 @@ class CITestUITests: XCTestCase {
         app.staticTexts["Second"].tap()
     }
 
+    func test_failure() {
+        let app = XCUIApplication()
+
+        app.staticTexts["First"].tap()
+        app.buttons["Switch"].tap()
+        app.staticTexts["First"].tap()
+    }
 
 }
