@@ -13,14 +13,23 @@ class CITestUITests: XCTestCase {
     override func setUp() {
         super.setUp()
 
-        continueAfterFailure = false
         XCUIApplication().launch()
     }
 
-    func testExample() {
+    func test_success() {
         let app = XCUIApplication()
 
+        app.staticTexts["First"].tap()
         app.buttons["Switch"].tap()
-    } 
+        app.staticTexts["Second"].tap()
+    }
+
+    func test_failure() {
+        let app = XCUIApplication()
+
+        app.staticTexts["First"].tap()
+        app.buttons["Switch"].tap()
+        app.staticTexts["First"].tap()
+    }
 
 }
