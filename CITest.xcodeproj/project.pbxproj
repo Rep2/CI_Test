@@ -256,7 +256,7 @@
 				TargetAttributes = {
 					1C1C776E1DCCC21000ADFA6C = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = XU2GV7VZT6;
+						DevelopmentTeam = TEU2W33Z6N;
 						ProvisioningStyle = Automatic;
 					};
 					1C1C77821DCCC21000ADFA6C = {
@@ -593,7 +593,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = XU2GV7VZT6;
+				DEVELOPMENT_TEAM = TEU2W33Z6N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/Alamofire\"",
@@ -615,7 +615,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = XU2GV7VZT6;
+				DEVELOPMENT_TEAM = TEU2W33Z6N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/Alamofire\"",
