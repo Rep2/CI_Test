@@ -257,7 +257,7 @@
 				TargetAttributes = {
 					1C1C776E1DCCC21000ADFA6C = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = TEU2W33Z6N;
+						DevelopmentTeam = XU2GV7VZT6;
 						ProvisioningStyle = Automatic;
 					};
 					1C1C77821DCCC21000ADFA6C = {
@@ -607,7 +607,7 @@
 			baseConfigurationReference = EC18D693F3AC85BA0BB9B42F /* Pods-CITest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TEU2W33Z6N;
+				DEVELOPMENT_TEAM = XU2GV7VZT6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/Alamofire\"",
@@ -626,7 +626,7 @@
 			baseConfigurationReference = A6AA5D2BF46F4473EE8AD9AF /* Pods-CITest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TEU2W33Z6N;
+				DEVELOPMENT_TEAM = XU2GV7VZT6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/Alamofire\"",
@@ -748,6 +748,7 @@
 				1C5687A31DCF7E350068398A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
