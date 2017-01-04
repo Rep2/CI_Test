@@ -192,7 +192,6 @@
 				1C1C776B1DCCC21000ADFA6C /* Sources */,
 				1C1C776C1DCCC21000ADFA6C /* Frameworks */,
 				1C1C776D1DCCC21000ADFA6C /* Resources */,
-				1C1C779A1DCCD9B200ADFA6C /* ShellScript */,
 				1C1C77991DCCD9A500ADFA6C /* ShellScript */,
 				684DBDF9D439794EAA05B796 /* [CP] Embed Pods Frameworks */,
 				F6379955A653E8D3A5A5F96B /* [CP] Copy Pods Resources */,
@@ -365,21 +364,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
-		};
-		1C1C779A1DCCD9B200ADFA6C /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/TweetFeedModels.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Unbox.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
 		684DBDF9D439794EAA05B796 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;

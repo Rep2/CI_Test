@@ -1,6 +1,3 @@
 [submodule "Carthage/Checkouts/unbox"]
-	path = Carthage/Checkouts/unbox
-	url = https://github.com/johnsundell/unbox.git
-[submodule "Carthage/Checkouts/TweetFeedModels"]
-	path = Carthage/Checkouts/TweetFeedModels
-	url = git@gitlab.trikoder.net:ivan.rep/TweetFeedModels.git
+    path = Carthage/Checkouts/unbox
+    url = https://github.com/johnsundell/unbox.git
