@@ -3,8 +3,8 @@ protocol Boxable {
 }
 
 extension Boxable {
-    func toJSONDict() -> [String : Any] {
-        var retDict = [String : Any]()
+    func toJSONDict() -> [String: Any] {
+        var retDict = [String: Any]()
 
         Mirror(reflecting: self)
             .children

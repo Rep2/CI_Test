@@ -15,7 +15,7 @@ class CITestUnitTest: XCTestCase {
 
     func test_fromJSON() {
         let json: [String : Any] = [
-            "name" : "test" as Any
+            "name": "test" as Any
         ]
 
         do {

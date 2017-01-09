@@ -20,6 +20,7 @@
 		1C56879E1DCF7E350068398A /* CITestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C56879D1DCF7E350068398A /* CITestUITests.swift */; };
 		1C5687A61DCF974D0068398A /* CITestUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5687A51DCF974D0068398A /* CITestUnitTest.swift */; };
 		4F474169EC03408B580DE466 /* Pods_CITest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9748E8BF4CF05DC9C686E54 /* Pods_CITest.framework */; };
+		AD8E98081E2328BA009A61BA /* Unbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD8E98071E2328BA009A61BA /* Unbox.framework */; };
 		F1D4C983A0796AA4E580E6C6 /* Pods_CITestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB4A911D7C32BF9DBECF13CB /* Pods_CITestTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		95674DFC8BCD306AEBC75CD5 /* Pods-CITestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CITestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CITestTests/Pods-CITestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A6AA5D2BF46F4473EE8AD9AF /* Pods-CITest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CITest.release.xcconfig"; path = "Pods/Target Support Files/Pods-CITest/Pods-CITest.release.xcconfig"; sourceTree = "<group>"; };
 		AB4A911D7C32BF9DBECF13CB /* Pods_CITestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CITestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD8E98071E2328BA009A61BA /* Unbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Unbox.framework; path = Carthage/Build/iOS/Unbox.framework; sourceTree = "<group>"; };
 		C350CE2CD21443CA62730B19 /* Pods-CITestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CITestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CITestTests/Pods-CITestTests.release.xcconfig"; sourceTree = "<group>"; };
 		C9748E8BF4CF05DC9C686E54 /* Pods_CITest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CITest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC18D693F3AC85BA0BB9B42F /* Pods-CITest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CITest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CITest/Pods-CITest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F474169EC03408B580DE466 /* Pods_CITest.framework in Frameworks */,
+				AD8E98081E2328BA009A61BA /* Unbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +167,7 @@
 		78B546389739A050E50A0837 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AD8E98071E2328BA009A61BA /* Unbox.framework */,
 				C9748E8BF4CF05DC9C686E54 /* Pods_CITest.framework */,
 				AB4A911D7C32BF9DBECF13CB /* Pods_CITestTests.framework */,
 			);
@@ -251,12 +255,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = undabot;
 				TargetAttributes = {
 					1C1C776E1DCCC21000ADFA6C = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = TEU2W33Z6N;
+						DevelopmentTeam = XU2GV7VZT6;
 						ProvisioningStyle = Automatic;
 					};
 					1C1C77821DCCC21000ADFA6C = {
@@ -590,10 +594,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EC18D693F3AC85BA0BB9B42F /* Pods-CITest.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = TEU2W33Z6N;
+				DEVELOPMENT_TEAM = XU2GV7VZT6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/Alamofire\"",
@@ -604,6 +609,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(PROJECT_DIR)/Carthage/Build/iOS @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.undabot.CITest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -612,10 +619,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A6AA5D2BF46F4473EE8AD9AF /* Pods-CITest.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = TEU2W33Z6N;
+				DEVELOPMENT_TEAM = XU2GV7VZT6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/Alamofire\"",

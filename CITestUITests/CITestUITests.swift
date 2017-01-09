@@ -24,5 +24,4 @@ class CITestUITests: XCTestCase {
         app.staticTexts["Second"].tap()
     }
 
-
 }
