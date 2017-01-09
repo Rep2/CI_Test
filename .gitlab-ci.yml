@@ -1,0 +1,8 @@
+stages:
+  - build
+
+build_project:
+  stage: build
+  script:
+    - xcodebuild clean -project CITest.xcodeproj -scheme CITest | xcpretty
+    - xcodebuild test -project CITest.xcodeproj -scheme CITest -destination 'platform=iOS Simulator,name=iPhone 6s,OS=9.2' | xcpretty -s
