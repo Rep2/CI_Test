@@ -4,5 +4,5 @@ stages:
 build_project:
   stage: build
   script:
-    - xcodebuild clean -project CITest.xcodeproj -scheme CITest
-    - xcodebuild test -project CITest.xcodeproj -scheme CITest -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.2'
+    - xcodebuild clean -workspace CITest.xcworkspace -scheme CITest
+    - xcodebuild test -workspace CITest.xcworkspace -scheme CITest -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.2'
