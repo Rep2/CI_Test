@@ -5,4 +5,4 @@ build_project:
   stage: build
   script:
     - xcodebuild clean -workspace CITest.xcworkspace -scheme CITest
-    - xcodebuild test -workspace CITest.xcworkspace -scheme CITest -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.2'
+    - xcodebuild test -workspace CITest.xcworkspace -scheme CITest -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.2'  | xcpretty -s

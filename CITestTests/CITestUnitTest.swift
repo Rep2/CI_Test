@@ -9,7 +9,7 @@ class CITestUnitTest: XCTestCase {
 
         let json = model.toJSONDict()
 
-        XCTAssert(json["name"] as? String == "test2")
+        XCTAssert(json["name"] as? String == "test22")
     }
 
     func test_fromJSON() {
